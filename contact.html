@@ -4,34 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Rainy Days - pushing the comfort zone" />
-    <title>Rainy Days | Home</title>
+    <meta name="description" content="Please let us know how we can help." />
+    <title>Rainy Days | Contact</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="/js/script.js" type="text/javascript"></script>
+    <script defer src="/js/contact.js" type="text/javascript"></script>
   </head>
+
   <body>
     <header>
       <img
         src="/images/icons/w_menu_icon.png"
         alt="show menu"
-        class="icon menu_icon" />
+        class="icon menu_icon clickable" />
       <a href="/index.html"
         ><img
           src="/images/logo/rainy-days_logo.png"
           alt="rainy days logo"
-          class="rd_logo"
+          class="rd_logo clickable"
       /></a>
       <img
         src="/images/icons/w_cart_icon.png"
         alt="view cart"
-        class="icon cart_icon" />
+        class="icon cart_icon clickable" />
     </header>
+    <!-- POP-UP OPEN MENU | GENDER  -->
     <nav class="first_menu">
       <div class="nav_header">
         <img
           src="/images/icons/w_cross_icon.png"
           alt="close menu"
-          class="close_menu clickable" />
+          class="close_menu" />
         <a href="/index.html">
           <img
             src="images/logo/rainy-days_logo.png"
@@ -64,6 +67,7 @@
         </div>
       </div>
     </nav>
+    <!-- POP-UP OPEN MENU | CATEGORIES  -->
     <nav class="second_menu">
       <div class="nav_header">
         <img
@@ -71,6 +75,7 @@
           alt="return to main menu"
           class="icon return_menu" />
         <p class="nav_link nav_gender_output"></p>
+        <p></p>
       </div>
       <div class="nav_categories nav_products">
         <a href="/products.html" class="clickable">
@@ -103,6 +108,7 @@
         </div>
       </div>
     </nav>
+    <!-- POP-UP VIEW CART -->
     <div class="view_cart">
       <img
         src="/images/icons/b_cross_icon.png"
@@ -136,24 +142,68 @@
         ><button class="gt_checkout clickable">GO TO CHECKOUT</button></a
       >
     </div>
-    <main id="index">
-      <h1>PUSHING THE COMFORT ZONE</h1>
-      <section id="index_container">
+
+    <main id="contact">
+      <section id="contact_hero">
         <img
-          src="images/other/active-ga60102c9d_1920.jpg"
-          alt="cheerful skier enjoying the winter environment"
-          class="index_full_view" />
-        <img
-          src="/images/other/mountains-g3be4b77ea_1920_crop.jpg"
-          alt="young man enjoying the scenery of nature"
-          class="index_full_view" />
-        <img
-          src="/images/other/mountains-g3be4b77ea_1920.jpg"
-          alt="young man enjoying the scenery of nature"
-          class="index_crop_view" />
-        <div class="row"></div>
+          src="/images/other/adobestock_250609864-1844117297_crop.jpg"
+          alt="group of people hiking together"
+          class="contact_img" />
+        <h1>CONTACT US</h1>
+      </section>
+      <section id="contact_info">
+        <h2>Available Hours</h2>
+        <div class="contact_hours">
+          <div>
+            <p>Mon - Fri:</p>
+            <p>Saturday:</p>
+            <p>Sunday:</p>
+          </div>
+          <div>
+            <p>7am - 4pm</p>
+            <p>8am - 2pm</p>
+            <p>9am - 1pm</p>
+          </div>
+        </div>
+      </section>
+      <section id="contact_form">
+        <form>
+          <h2>Contact us</h2>
+          <div>
+            <label for="full_name" class="bold">Full name</label>
+            <p class="error name_error">Please enter your full name.</p>
+            <input type="text" id="full_name" />
+          </div>
+          <div>
+            <label for="email" class="bold">Email</label>
+            <p class="error email_error">Please use a valid email adress.</p>
+            <input type="email" id="email" />
+          </div>
+          <div>
+            <label for="subject" class="bold">Subject</label>
+            <p class="error subject_error">
+              Your subject needs to be at least 5 characters.
+            </p>
+            <input type="text" id="subject" />
+          </div>
+          <div>
+            <label for="message" class="bold">Message</label>
+            <p class="error message_error">
+              Your message needs to be at least 10 characters.
+            </p>
+            <textarea id="message"></textarea>
+            <center>
+              <p class="error validate_error bold">
+                Please fill out the missing fields above ^
+              </p>
+            </center>
+            <center><div class="loader"></div></center>
+            <div class="send_message clickable">SEND MESSAGE</div>
+          </div>
+        </form>
       </section>
     </main>
+
     <footer>
       <div>
         <a href="/contact.html" class="nav_link">Contact us</a>

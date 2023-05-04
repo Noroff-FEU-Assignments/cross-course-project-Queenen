@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Rainy Days - pushing the comfort zone" />
-    <title>Rainy Days | Home</title>
+    <meta name="description" content="Viewing the items in your cart" />
+    <title>Rainy Days | Cart</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="/js/script.js" type="text/javascript"></script>
   </head>
@@ -136,23 +136,40 @@
         ><button class="gt_checkout clickable">GO TO CHECKOUT</button></a
       >
     </div>
-    <main id="index">
-      <h1>PUSHING THE COMFORT ZONE</h1>
-      <section id="index_container">
-        <img
-          src="images/other/active-ga60102c9d_1920.jpg"
-          alt="cheerful skier enjoying the winter environment"
-          class="index_full_view" />
-        <img
-          src="/images/other/mountains-g3be4b77ea_1920_crop.jpg"
-          alt="young man enjoying the scenery of nature"
-          class="index_full_view" />
-        <img
-          src="/images/other/mountains-g3be4b77ea_1920.jpg"
-          alt="young man enjoying the scenery of nature"
-          class="index_crop_view" />
-        <div class="row"></div>
+    <main>
+      <h1>CART</h1>
+      <section id="cart_hero">
+        <a href="javascript:history.back()">
+          <img
+            src="/images/icons/b_arrow-left.png"
+            alt="return to last page"
+            class="icon" />
+        </a>
+        <p class="title bold"><span class="title bold">1 </span>product(s)</p>
       </section>
+      <section id="cart_item_container">
+        <div class="cart_item">
+          <img
+            src="/images/products/RainyDays_Jacket1.jpg"
+            alt="jacket"
+            class="cart_image" />
+          <div class="cart_item_info">
+            <p class="bold title">Rainy Days</p>
+            <p class="title">Jacket</p>
+            <p>Size: <span>M</span></p>
+            <p>Amount: <span>1</span></p>
+            <p class="underline clickable">remove</p>
+          </div>
+          <p class="title bold cart_item_price">$$$</p>
+        </div>
+      </section>
+      <div class="cart_total">
+        <p class="title bold">Total:</p>
+        <p class="title bold">$$$</p>
+      </div>
+      <a href="/checkout.html">
+        <div class="cart_checkout clickable">GO TO CHECKOUT</div>
+      </a>
     </main>
     <footer>
       <div>

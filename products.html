@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Rainy Days - pushing the comfort zone" />
-    <title>Rainy Days | Home</title>
+    <meta
+      name="description"
+      content="Our selection of jackets will keep you warm and dry for any adventure!" />
+    <title>Rainy Days | Jackets</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="/js/script.js" type="text/javascript"></script>
+    <script defer src="/js/products.js" type="text/javascript"></script>
   </head>
   <body>
     <header>
@@ -31,7 +34,7 @@
         <img
           src="/images/icons/w_cross_icon.png"
           alt="close menu"
-          class="close_menu clickable" />
+          class="close_menu" />
         <a href="/index.html">
           <img
             src="images/logo/rainy-days_logo.png"
@@ -71,6 +74,7 @@
           alt="return to main menu"
           class="icon return_menu" />
         <p class="nav_link nav_gender_output"></p>
+        <p></p>
       </div>
       <div class="nav_categories nav_products">
         <a href="/products.html" class="clickable">
@@ -136,22 +140,14 @@
         ><button class="gt_checkout clickable">GO TO CHECKOUT</button></a
       >
     </div>
-    <main id="index">
-      <h1>PUSHING THE COMFORT ZONE</h1>
-      <section id="index_container">
-        <img
-          src="images/other/active-ga60102c9d_1920.jpg"
-          alt="cheerful skier enjoying the winter environment"
-          class="index_full_view" />
-        <img
-          src="/images/other/mountains-g3be4b77ea_1920_crop.jpg"
-          alt="young man enjoying the scenery of nature"
-          class="index_full_view" />
-        <img
-          src="/images/other/mountains-g3be4b77ea_1920.jpg"
-          alt="young man enjoying the scenery of nature"
-          class="index_crop_view" />
-        <div class="row"></div>
+    <main>
+      <h1>JACKETS</h1>
+      <div class="space"></div>
+      <button class="bold featured_btn">FEATURED ONLY</button>
+      <button class="bold show_all_btn">SHOW ALL</button>
+      <section id="products_container">
+        <div class="loader"></div>
+        <div class="error_msg"></div>
       </section>
     </main>
     <footer>

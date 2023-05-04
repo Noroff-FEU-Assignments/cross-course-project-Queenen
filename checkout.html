@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Proceeding with checkout" />
+    <title>Rainy Days | Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="/js/checkout.js" type="text/javascript"></script>
+    <script defer src="/js/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/images/icons/w_menu_icon.png"
+        alt="show menu"
+        class="icon menu_icon" />
+      <a href="/index.html"
+        ><img
+          src="/images/logo/rainy-days_logo.png"
+          alt="rainy days logo"
+          class="rd_logo"
+      /></a>
+      <img
+        src="/images/icons/w_cart_icon.png"
+        alt="view cart"
+        class="icon cart_icon" />
+    </header>
+    <nav class="first_menu">
+      <div class="nav_header">
+        <img
+          src="/images/icons/w_cross_icon.png"
+          alt="close menu"
+          class="close_menu clickable" />
+        <a href="/index.html">
+          <img
+            src="images/logo/rainy-days_logo.png"
+            alt="rainy days logo"
+            class="rd_logo" />
+        </a>
+        <p></p>
+      </div>
+      <div class="nav_categories nav_gender">
+        <div class="clickable url_women">
+          <p class="nav_link">Women</p>
+          <img
+            src="images/icons/b_angle-right.png"
+            alt="view products"
+            class="icon" />
+        </div>
+        <div class="clickable url_men">
+          <p class="nav_link">Men</p>
+          <img
+            src="images/icons/b_angle-right.png"
+            alt="view products"
+            class="icon" />
+        </div>
+        <div class="clickable url_unisex">
+          <p class="nav_link">Unisex</p>
+          <img
+            src="images/icons/b_angle-right.png"
+            alt="view products"
+            class="icon" />
+        </div>
+      </div>
+    </nav>
+    <nav class="second_menu">
+      <div class="nav_header">
+        <img
+          src="/images/icons/w_arrow-left.png"
+          alt="return to main menu"
+          class="icon return_menu" />
+        <p class="nav_link nav_gender_output"></p>
+      </div>
+      <div class="nav_categories nav_products">
+        <a href="/products.html" class="clickable">
+          <p class="nav_link">Jackets</p>
+          <img
+            src="images/icons/b_angle-right.png"
+            alt="view products"
+            class="icon" />
+        </a>
+        <div>
+          <p class="nav_link">Pants<span>Coming soon</span></p>
+          <img
+            src="images/icons/b_angle-right.png"
+            alt="view products"
+            class="icon" />
+        </div>
+        <div>
+          <p class="nav_link">Jumpsuits<span>Coming soon</span></p>
+          <img
+            src="images/icons/b_angle-right.png"
+            alt="view products"
+            class="icon" />
+        </div>
+        <div>
+          <p class="nav_link">Accessories<span>Coming soon</span></p>
+          <img
+            src="images/icons/b_angle-right.png"
+            alt="view products"
+            class="icon" />
+        </div>
+      </div>
+    </nav>
+    <div class="view_cart">
+      <img
+        src="/images/icons/b_cross_icon.png"
+        class="close_menu close_cart clickable"
+        alt="close menu" />
+      <div class="vc_amount">
+        <p>1</p>
+        <p>product(s)</p>
+      </div>
+      <div class="vc_item">
+        <img
+          src="/images/products/RainyDays_Jacket1.jpg"
+          alt="jacket"
+          class="small_thumbnail" />
+        <div class="vc_product_info">
+          <p class="bold">Rainy Days</p>
+          <p>Jacket</p>
+          <p>Size: <span>M</span></p>
+          <p>Amount: <span>1</span></p>
+          <p class="underline clickable smaller">Remove</p>
+        </div>
+        <div class="vc_item_price">
+          <p class="bold">900 <span class="bold">KR</span></p>
+        </div>
+      </div>
+      <div class="vc_total">
+        <p class="bold">Total:</p>
+        <p class="bold">900 <span class="bold">KR</span></p>
+      </div>
+      <a href="/checkout.html"
+        ><button class="gt_checkout clickable">GO TO CHECKOUT</button></a
+      >
+    </div>
+    <main id="checkout">
+      <div>
+        <h1>CHECKOUT</h1>
+      </div>
+
+      <form id="checkout_1">
+        <div class="row"></div>
+        <div class="co_process_bar clickable">
+          <div class="clickable first_dot"></div>
+          <div class="clickable"></div>
+          <div class="clickable"></div>
+        </div>
+
+        <div class="checkout_flex_col">
+          <label for="first_name" class="bold">First name</label>
+          <p class="error">Please add a first name</p>
+          <input type="text" id="first_name" />
+        </div>
+
+        <div class="checkout_flex_col">
+          <label for="last_name" class="bold">Last name</label>
+          <p class="error">Please add a last name</p>
+          <input type="text" id="last_name" />
+        </div>
+
+        <div class="checkout_flex_row">
+          <div>
+            <label for="street_name" class="bold">Street name</label>
+            <p class="error">Please add a street name</p>
+          </div>
+          <div>
+            <label for="street_no" class="bold">Street NO</label>
+            <p class="error">Please add a street number</p>
+          </div>
+        </div>
+
+        <div class="street checkout_flex_row">
+          <input type="text" id="street_name" />
+          <input type="number" id="street_no" />
+        </div>
+
+        <div class="checkout_flex_col">
+          <label for="mobile" class="bold">Mobile</label>
+          <p class="error">Please add a valid mobile number</p>
+          <input type="tel" id="mobile" />
+        </div>
+
+        <div class="checkout_flex_col">
+          <label for="email" class="bold">Email</label>
+          <p class="error">Please add a valid email adress</p>
+          <input type="email" id="email" />
+        </div>
+
+        <div class="proceed_btn clickable">PROCEED</div>
+      </form>
+
+      <form id="checkout_2">
+        <div class="row"></div>
+        <div class="co_process_bar">
+          <div class="clickable"></div>
+          <div class="clickable second_dot"></div>
+          <div class="clickable"></div>
+        </div>
+
+        <fieldset class="checkout_card">
+          <legend class="bold">Payment options</legend>
+          <div>
+            <img src="/images/logo/visa.png" alt="visa card" class="pay_card" />
+            <input type="radio" checked name="card" />
+          </div>
+          <div>
+            <img
+              src="/images/logo/maestro.png"
+              alt="maestro card"
+              class="pay_card" />
+            <input type="radio" name="card" />
+          </div>
+        </fieldset>
+
+        <div class="checkout_holder checkout_flex_col">
+          <label for="card_holder" class="bold">Card holder</label>
+          <p class="error">Please add card holder name</p>
+          <input type="text" id="card_holder" />
+        </div>
+        <div class="checkout_valid checkout_flex_col">
+          <label for="valid" class="bold">Valid</label>
+          <p class="error">Please add a valid month</p>
+          <p class="error">Please add a valid year</p>
+        </div>
+        <div class="checkout_valid checkout_flex_row">
+          <input type="number" id="valid" />
+          <input type="number" id="valid" />
+        </div>
+
+        <div class="card_number checkout_card_number">
+          <div class="checkout_flex_col">
+            <label for="card_number" class="bold">Card number</label>
+            <p class="error">Please add a valid card number</p>
+          </div>
+          <div class="card_number checkout_flex_row">
+            <input type="number" id="card_number" />
+            <input type="number" id="card_number" />
+            <input type="number" id="card_number" />
+            <input type="number" id="card_number" />
+          </div>
+        </div>
+        <div class="cvc checkout_flex_col">
+          <label for="cvc" class="bold">CVC</label>
+          <p class="error">Please add a valid cvc</p>
+          <input type="number" id="cvc" />
+        </div>
+        <div class="proceed_btn pay_btn clickable">BUY NOW</div>
+      </form>
+
+      <form id="checkout_3">
+        <div class="row"></div>
+        <div class="co_process_bar">
+          <div class="clickable"></div>
+          <div class="clickable"></div>
+          <div class="clickable third_dot"></div>
+        </div>
+
+        <div class="checkout_success">
+          <img
+            src="/images/other/thank_you.jpg"
+            alt="thank you"
+            class="thanks" />
+          <p>We sincerely hope you will be satisfied with the purchase!</p>
+          <p>Shortly you will receive an email with the order confirmation.</p>
+          <p class="title bold">Have a great day!</p>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <a href="/html/contact.html" class="nav_link">Contact us</a>
+        <a href="/html/about.html" class="nav_link">About us</a>
+      </div>
+      <p>© Rainy Days. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
